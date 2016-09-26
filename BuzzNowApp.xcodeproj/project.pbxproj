@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		809242871D9977B70048CF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809242861D9977B70048CF9F /* AppDelegate.swift */; };
+		809242891D9977B70048CF9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809242881D9977B70048CF9F /* ViewController.swift */; };
+		8092428C1D9977B70048CF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8092428A1D9977B70048CF9F /* Main.storyboard */; };
+		8092428F1D9977B70048CF9F /* BuzzNowApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8092428D1D9977B70048CF9F /* BuzzNowApp.xcdatamodeld */; };
+		809242911D9977B70048CF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809242901D9977B70048CF9F /* Assets.xcassets */; };
+		809242941D9977B70048CF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809242921D9977B70048CF9F /* LaunchScreen.storyboard */; };
+		8092429F1D9977B80048CF9F /* BuzzNowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8092429E1D9977B80048CF9F /* BuzzNowAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8092429B1D9977B80048CF9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8092427B1D9977B70048CF9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809242821D9977B70048CF9F;
+			remoteInfo = BuzzNowApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		809242831D9977B70048CF9F /* BuzzNowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzNowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		809242861D9977B70048CF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		809242881D9977B70048CF9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8092428B1D9977B70048CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8092428E1D9977B70048CF9F /* BuzzNowApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuzzNowApp.xcdatamodel; sourceTree = "<group>"; };
+		809242901D9977B70048CF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		809242931D9977B70048CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		809242951D9977B70048CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8092429A1D9977B80048CF9F /* BuzzNowAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzNowAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8092429E1D9977B80048CF9F /* BuzzNowAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzNowAppTests.swift; sourceTree = "<group>"; };
+		809242A01D9977B80048CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		809242801D9977B70048CF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809242971D9977B80048CF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8092427A1D9977B70048CF9F = {
+			isa = PBXGroup;
+			children = (
+				809242851D9977B70048CF9F /* BuzzNowApp */,
+				8092429D1D9977B80048CF9F /* BuzzNowAppTests */,
+				809242841D9977B70048CF9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		809242841D9977B70048CF9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809242831D9977B70048CF9F /* BuzzNowApp.app */,
+				8092429A1D9977B80048CF9F /* BuzzNowAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809242851D9977B70048CF9F /* BuzzNowApp */ = {
+			isa = PBXGroup;
+			children = (
+				809242861D9977B70048CF9F /* AppDelegate.swift */,
+				809242881D9977B70048CF9F /* ViewController.swift */,
+				8092428A1D9977B70048CF9F /* Main.storyboard */,
+				809242901D9977B70048CF9F /* Assets.xcassets */,
+				809242921D9977B70048CF9F /* LaunchScreen.storyboard */,
+				809242951D9977B70048CF9F /* Info.plist */,
+				8092428D1D9977B70048CF9F /* BuzzNowApp.xcdatamodeld */,
+			);
+			path = BuzzNowApp;
+			sourceTree = "<group>";
+		};
+		8092429D1D9977B80048CF9F /* BuzzNowAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8092429E1D9977B80048CF9F /* BuzzNowAppTests.swift */,
+				809242A01D9977B80048CF9F /* Info.plist */,
+			);
+			path = BuzzNowAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		809242821D9977B70048CF9F /* BuzzNowApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809242A31D9977B80048CF9F /* Build configuration list for PBXNativeTarget "BuzzNowApp" */;
+			buildPhases = (
+				8092427F1D9977B70048CF9F /* Sources */,
+				809242801D9977B70048CF9F /* Frameworks */,
+				809242811D9977B70048CF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzNowApp;
+			productName = BuzzNowApp;
+			productReference = 809242831D9977B70048CF9F /* BuzzNowApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		809242991D9977B80048CF9F /* BuzzNowAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809242A61D9977B80048CF9F /* Build configuration list for PBXNativeTarget "BuzzNowAppTests" */;
+			buildPhases = (
+				809242961D9977B80048CF9F /* Sources */,
+				809242971D9977B80048CF9F /* Frameworks */,
+				809242981D9977B80048CF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8092429C1D9977B80048CF9F /* PBXTargetDependency */,
+			);
+			name = BuzzNowAppTests;
+			productName = BuzzNowAppTests;
+			productReference = 8092429A1D9977B80048CF9F /* BuzzNowAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8092427B1D9977B70048CF9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shawn Wu";
+				TargetAttributes = {
+					809242821D9977B70048CF9F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					809242991D9977B80048CF9F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 809242821D9977B70048CF9F;
+					};
+				};
+			};
+			buildConfigurationList = 8092427E1D9977B70048CF9F /* Build configuration list for PBXProject "BuzzNowApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8092427A1D9977B70048CF9F;
+			productRefGroup = 809242841D9977B70048CF9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809242821D9977B70048CF9F /* BuzzNowApp */,
+				809242991D9977B80048CF9F /* BuzzNowAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		809242811D9977B70048CF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809242941D9977B70048CF9F /* LaunchScreen.storyboard in Resources */,
+				809242911D9977B70048CF9F /* Assets.xcassets in Resources */,
+				8092428C1D9977B70048CF9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809242981D9977B80048CF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8092427F1D9977B70048CF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809242891D9977B70048CF9F /* ViewController.swift in Sources */,
+				8092428F1D9977B70048CF9F /* BuzzNowApp.xcdatamodeld in Sources */,
+				809242871D9977B70048CF9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809242961D9977B80048CF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8092429F1D9977B80048CF9F /* BuzzNowAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8092429C1D9977B80048CF9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809242821D9977B70048CF9F /* BuzzNowApp */;
+			targetProxy = 8092429B1D9977B80048CF9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8092428A1D9977B70048CF9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8092428B1D9977B70048CF9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		809242921D9977B70048CF9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809242931D9977B70048CF9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		809242A11D9977B80048CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		809242A21D9977B80048CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809242A41D9977B80048CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuzzNowApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gatech.BuzzNowApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		809242A51D9977B80048CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuzzNowApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gatech.BuzzNowApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		809242A71D9977B80048CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzNowAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gatech.BuzzNowAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuzzNowApp.app/BuzzNowApp";
+			};
+			name = Debug;
+		};
+		809242A81D9977B80048CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzNowAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gatech.BuzzNowAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuzzNowApp.app/BuzzNowApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8092427E1D9977B70048CF9F /* Build configuration list for PBXProject "BuzzNowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809242A11D9977B80048CF9F /* Debug */,
+				809242A21D9977B80048CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809242A31D9977B80048CF9F /* Build configuration list for PBXNativeTarget "BuzzNowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809242A41D9977B80048CF9F /* Debug */,
+				809242A51D9977B80048CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		809242A61D9977B80048CF9F /* Build configuration list for PBXNativeTarget "BuzzNowAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809242A71D9977B80048CF9F /* Debug */,
+				809242A81D9977B80048CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8092428D1D9977B70048CF9F /* BuzzNowApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8092428E1D9977B70048CF9F /* BuzzNowApp.xcdatamodel */,
+			);
+			currentVersion = 8092428E1D9977B70048CF9F /* BuzzNowApp.xcdatamodel */;
+			path = BuzzNowApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8092427B1D9977B70048CF9F /* Project object */;
+}
