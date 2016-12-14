@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScrollViewContent" customModule="BuzzNowApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0r1-vU-Q48">
+                    <frame key="frameInset" minX="30" minY="-1" width="540" height="601"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-as-mNl">
+                            <frame key="frameInset" minX="30" minY="260" width="480" height="241"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="ARe-5L-bhj"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="ARe-5L-bhj"/>
+                                </mask>
+                            </variation>
+                        </textView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jya-rb-Vkh">
+                            <frame key="frameInset" minX="220" minY="80" width="100" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="BxB-b8-J8z"/>
+                                <constraint firstAttribute="width" constant="100" id="q6W-Rq-Lsd"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Jya-rb-Vkh" firstAttribute="top" secondItem="0r1-vU-Q48" secondAttribute="top" constant="80" id="0Gc-bh-4bb"/>
+                        <constraint firstItem="6B0-as-mNl" firstAttribute="top" secondItem="Jya-rb-Vkh" secondAttribute="bottom" constant="60" id="1gx-im-whN"/>
+                        <constraint firstItem="Jya-rb-Vkh" firstAttribute="centerX" secondItem="0r1-vU-Q48" secondAttribute="centerX" id="Ane-kK-aI9"/>
+                        <constraint firstAttribute="bottom" secondItem="6B0-as-mNl" secondAttribute="bottom" constant="50" id="XEk-m0-Nj6"/>
+                        <constraint firstItem="6B0-as-mNl" firstAttribute="leading" secondItem="0r1-vU-Q48" secondAttribute="leading" constant="30" id="bis-YD-jKq"/>
+                        <constraint firstItem="6B0-as-mNl" firstAttribute="centerX" secondItem="0r1-vU-Q48" secondAttribute="centerX" id="h7K-QD-YlZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0r1-vU-Q48" secondAttribute="bottom" id="Q8O-ef-KlI"/>
+                <constraint firstItem="0r1-vU-Q48" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aGc-sa-pft"/>
+                <constraint firstItem="0r1-vU-Q48" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u4V-El-fQz"/>
+                <constraint firstItem="0r1-vU-Q48" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="zL6-VA-Rce"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="Jya-rb-Vkh" id="W6S-mt-u7e"/>
+                <outlet property="textView" destination="6B0-as-mNl" id="jDW-gw-ozJ"/>
+            </connections>
+        </view>
+    </objects>
+</document>

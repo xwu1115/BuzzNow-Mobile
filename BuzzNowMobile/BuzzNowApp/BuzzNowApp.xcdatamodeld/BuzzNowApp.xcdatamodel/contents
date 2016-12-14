@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Order" representedClassName=".Order" syncable="YES">
+        <attribute name="creation_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="buyer" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="complete_order" inverseEntity="User" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderItem" inverseName="order" inverseEntity="OrderItem" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Supermarket" inverseName="order" inverseEntity="Supermarket" syncable="YES"/>
+        <relationship name="requester" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="request_order" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="OrderItem" representedClassName="OrderItem" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="num" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="items" inverseEntity="Order" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="orderItems" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName=".Product" syncable="YES">
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="orderItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderItem" inverseName="product" inverseEntity="OrderItem" syncable="YES"/>
+    </entity>
+    <entity name="Supermarket" representedClassName=".Supermarket" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="location" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="complete_order_num" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="request_order_num" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="complete_order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="buyer" inverseEntity="Order" syncable="YES"/>
+        <relationship name="request_order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="requester" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Order" positionX="-333" positionY="-321" width="128" height="150"/>
+        <element name="OrderItem" positionX="-45" positionY="81" width="128" height="105"/>
+        <element name="Product" positionX="-297" positionY="174" width="128" height="120"/>
+        <element name="Supermarket" positionX="-11" positionY="411" width="128" height="120"/>
+        <element name="User" positionX="81" positionY="-168" width="128" height="195"/>
+    </elements>
+</model>

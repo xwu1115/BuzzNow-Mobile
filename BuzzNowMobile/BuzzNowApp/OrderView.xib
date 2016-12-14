@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.otf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderView" customModule="BuzzNowApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cic-nS-VSh">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDN-66-Fi4" customClass="SelectOrderButton" customModule="BuzzNowApp" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="HLZ-oA-Ny0"/>
+                            </constraints>
+                            <state key="normal" title="??Select Order"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdY-ZX-T3h">
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                            <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xdY-ZX-T3h" secondAttribute="trailing" constant="20" id="KiR-X2-oJb"/>
+                        <constraint firstItem="EDN-66-Fi4" firstAttribute="centerX" secondItem="cic-nS-VSh" secondAttribute="centerX" id="Xdy-DL-DCH"/>
+                        <constraint firstAttribute="trailing" secondItem="EDN-66-Fi4" secondAttribute="trailing" id="dof-TA-Rzt"/>
+                        <constraint firstItem="EDN-66-Fi4" firstAttribute="leading" secondItem="cic-nS-VSh" secondAttribute="leading" id="gOw-PO-5qx"/>
+                        <constraint firstAttribute="bottom" secondItem="EDN-66-Fi4" secondAttribute="bottom" id="iTT-ot-OUX"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OTR-ma-L3r">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="Oyu-WE-3Ds"/>
+                        <constraint firstAttribute="height" constant="78" id="n1v-Q4-8If"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Number of Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWd-yS-qyn">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??Estimated Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc5-bb-YZL">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPC-88-PTj">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips You Will Get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd3-iD-Bws">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsM-lH-2lo">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??Total Number of Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1O-4e-tXM">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??Estimated Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmz-7x-LVU">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="24"/>
+                    <color key="textColor" red="0.29884628809234182" green="0.69620060341042889" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??Tips You Will Get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laY-Ih-2OU">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="24"/>
+                    <color key="textColor" red="0.27058823529411763" green="0.74901960784313726" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agL-BZ-RGk">
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jsM-lH-2lo" firstAttribute="top" secondItem="OTR-ma-L3r" secondAttribute="top" constant="5" id="1av-22-w5n"/>
+                <constraint firstItem="ZPC-88-PTj" firstAttribute="top" secondItem="OTR-ma-L3r" secondAttribute="bottom" constant="35" id="4FV-Qi-pSa"/>
+                <constraint firstItem="eWd-yS-qyn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="5FM-E9-AFq"/>
+                <constraint firstItem="agL-BZ-RGk" firstAttribute="top" secondItem="f1O-4e-tXM" secondAttribute="bottom" constant="16" id="5Ma-tF-9wZ"/>
+                <constraint firstItem="cmz-7x-LVU" firstAttribute="top" secondItem="agL-BZ-RGk" secondAttribute="bottom" constant="8" id="6BX-Qy-0Dm"/>
+                <constraint firstItem="laY-Ih-2OU" firstAttribute="leading" secondItem="bd3-iD-Bws" secondAttribute="leading" id="6G4-vt-dfq"/>
+                <constraint firstItem="OTR-ma-L3r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="7ix-fB-nMo"/>
+                <constraint firstItem="eWd-yS-qyn" firstAttribute="top" secondItem="OTR-ma-L3r" secondAttribute="bottom" constant="35" id="8ha-lg-lv8"/>
+                <constraint firstItem="f1O-4e-tXM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="BZm-9g-WEW"/>
+                <constraint firstItem="xdY-ZX-T3h" firstAttribute="top" secondItem="jsM-lH-2lo" secondAttribute="bottom" constant="10" id="G11-lF-1ql"/>
+                <constraint firstItem="f1O-4e-tXM" firstAttribute="top" secondItem="eWd-yS-qyn" secondAttribute="bottom" constant="8" id="HEU-PE-CW1"/>
+                <constraint firstItem="cic-nS-VSh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HUU-cC-3su"/>
+                <constraint firstItem="jsM-lH-2lo" firstAttribute="width" secondItem="xdY-ZX-T3h" secondAttribute="width" id="N5K-ky-wrh"/>
+                <constraint firstItem="xdY-ZX-T3h" firstAttribute="leading" secondItem="OTR-ma-L3r" secondAttribute="trailing" constant="16" id="Xd3-6N-FkX"/>
+                <constraint firstItem="jsM-lH-2lo" firstAttribute="leading" secondItem="OTR-ma-L3r" secondAttribute="trailing" constant="16" id="YzM-bf-Hw1"/>
+                <constraint firstItem="bd3-iD-Bws" firstAttribute="top" secondItem="agL-BZ-RGk" secondAttribute="top" id="Z6K-4J-Gs7"/>
+                <constraint firstItem="bd3-iD-Bws" firstAttribute="leading" secondItem="ZPC-88-PTj" secondAttribute="leading" id="bVd-mv-kfs"/>
+                <constraint firstItem="nc5-bb-YZL" firstAttribute="top" secondItem="ZPC-88-PTj" secondAttribute="bottom" constant="8" id="cDB-nu-7O4"/>
+                <constraint firstAttribute="trailing" secondItem="cic-nS-VSh" secondAttribute="trailing" id="dU4-cX-uAX"/>
+                <constraint firstAttribute="trailing" secondItem="ZPC-88-PTj" secondAttribute="trailing" constant="45" id="jB2-eV-E05"/>
+                <constraint firstItem="nc5-bb-YZL" firstAttribute="leading" secondItem="ZPC-88-PTj" secondAttribute="leading" id="kfc-HX-xo8"/>
+                <constraint firstItem="cic-nS-VSh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oAA-HX-9vz"/>
+                <constraint firstItem="cmz-7x-LVU" firstAttribute="leading" secondItem="agL-BZ-RGk" secondAttribute="leading" id="sDc-pr-3mZ"/>
+                <constraint firstItem="agL-BZ-RGk" firstAttribute="leading" secondItem="f1O-4e-tXM" secondAttribute="leading" id="sgT-WK-6v2"/>
+                <constraint firstItem="laY-Ih-2OU" firstAttribute="top" secondItem="bd3-iD-Bws" secondAttribute="bottom" constant="8" id="sze-gl-deS"/>
+                <constraint firstAttribute="bottom" secondItem="cic-nS-VSh" secondAttribute="bottom" constant="20" id="vCV-ky-AaE"/>
+                <constraint firstItem="OTR-ma-L3r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="zaV-LV-stJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addrLabel" destination="xdY-ZX-T3h" id="2Uc-uS-WdV"/>
+                <outlet property="bkgView" destination="cic-nS-VSh" id="KQ5-Pe-bia"/>
+                <outlet property="esitimateTips" destination="laY-Ih-2OU" id="cjE-gj-Rxf"/>
+                <outlet property="esitimateTotal" destination="cmz-7x-LVU" id="t3C-w3-K3e"/>
+                <outlet property="esitimateWeight" destination="nc5-bb-YZL" id="DkA-e2-5xG"/>
+                <outlet property="imageIcon" destination="OTR-ma-L3r" id="evx-sy-hdJ"/>
+                <outlet property="nameLabel" destination="jsM-lH-2lo" id="MwF-hE-G0I"/>
+                <outlet property="numOfItems" destination="f1O-4e-tXM" id="jc6-KI-vuv"/>
+                <outlet property="selectButton" destination="EDN-66-Fi4" id="OhV-8v-yqp"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>
